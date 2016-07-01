@@ -4,3 +4,6 @@
 [submodule "bundle/vim-elixir"]
 	path = bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
+[submodule "bundle/bundle/vim-abolish"]
+	path = bundle/bundle/vim-abolish
+	url = https://github.com/tpope/vim-abolish
