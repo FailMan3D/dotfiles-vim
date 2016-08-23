@@ -7,3 +7,6 @@
 [submodule "bundle/vim-abolish"]
 	path = bundle/vim-abolish
 	url = https://github.com/tpope/vim-abolish.git
+[submodule "bundle/SyntaxRange"]
+	path = bundle/SyntaxRange
+	url = https://github.com/vim-scripts/SyntaxRange.git

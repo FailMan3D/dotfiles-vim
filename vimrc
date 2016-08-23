@@ -1,6 +1,6 @@
 setglobal nocompatible
 execute pathogen#infect()
-set nu
+set nu ai
 colo desert
 if has('gui_running')
 	set guifont=Monospace\ 12
@@ -24,3 +24,5 @@ com! -complete=file -nargs=* Tabe silent! exec "!vim --servername " . v:serverna
 
 set exrc
 set modeline
+
+autocmd FileType mail setlocal textwidth=72
