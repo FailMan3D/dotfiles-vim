@@ -44,3 +44,8 @@ autocmd FileType plperl setlocal syntax=sql " embedded Perl syntax is provided b
 autocmd BufNewFile,BufRead * call SyntaxRange#Include('#\[begsyn perl\]', '#\[endsyn perl\]', 'perl', 'NonText')
 autocmd BufNewFile,BufRead * call SyntaxRange#Include('--\[begsyn sql\]', '--\[endsyn sql\]', 'sql', 'NonText')
 autocmd BufNewFile,BufRead * call SyntaxRange#Include('--\[begsyn plsql\]', '--\[endsyn plsql\]', 'plsql', 'NonText')
+
+" https://sanctum.geek.nz/arabesque/local-vimrc-files/
+if filereadable(glob("~/.vimrc.local"))
+	source ~/.vimrc.local
+end
