@@ -56,6 +56,11 @@ augroup syntax_subregion_markers
 	autocmd BufNewFile,BufRead * call SyntaxRange#Include('--\[begsyn plsql\]', '--\[endsyn plsql\]', 'plsql', 'NonText')
 augroup END
 
+augroup un_stupidize_comments
+	au!
+	autocmd BufNewFile,BufRead * setlocal cinkeys-=0# indentkeys-=0#
+augroup END
+
 " https://sanctum.geek.nz/arabesque/local-vimrc-files/
 if filereadable(glob("~/.vimrc.local"))
 	source ~/.vimrc.local
