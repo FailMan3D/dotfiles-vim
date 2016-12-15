@@ -21,7 +21,7 @@ nnoremap <F10> <C-o>:stselect<Return>
 augroup type_specific_overrides
 	au!
 	autocmd FileType lisp setlocal tabstop=2 softtabstop=0 shiftwidth=2 noexpandtab cindent cinoptions=(2U1 equalprg=~/.local/libexec/stupid-lisp-indent.pl
-	autocmd FileType erb,javascript,ruby,haml,sass,scss,gitcommit setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+	autocmd FileType erb,javascript,ruby,haml,sass,scss,gitcommit,eelixer setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 	autocmd FileType haml,sass setlocal copyindent
 
 	function! SetTagfileBecauseAutocmdSucksAtPatternExpansion()
