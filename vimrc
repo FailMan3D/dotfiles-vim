@@ -6,6 +6,8 @@ if has('gui_running')
 	set guifont=Monospace\ 12
 end
 
+inoremap <F3> <C-o>:syntax sync fromstart<Return>
+nnoremap <F3> :syntax sync fromstart<Return>
 inoremap <F5> <C-o>:tabprevious<Return>
 nnoremap <F5> :tabprevious<Return>
 inoremap <F8> <C-o>:tabnext<Return>
