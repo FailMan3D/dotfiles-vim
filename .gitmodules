@@ -16,3 +16,6 @@
 [submodule "bundle/vim-kerboscript"]
 	path = bundle/vim-kerboscript
 	url = git://github.com/tomvanderlee/vim-kerboscript.git
+[submodule "bundle/vim-nginx"]
+	path = bundle/vim-nginx
+	url = https://github.com/fatih/vim-nginx.git
