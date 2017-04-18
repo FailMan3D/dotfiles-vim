@@ -6,6 +6,9 @@ if has('gui_running')
 	set guifont=Monospace\ 12
 end
 
+setglobal printoptions=number:y,paper:letter
+set printoptions=number:y,paper:letter
+
 inoremap <F3> <C-o>:syntax sync fromstart<Return>
 nnoremap <F3> :syntax sync fromstart<Return>
 inoremap <F5> <C-o>:tabprevious<Return>
@@ -25,6 +28,8 @@ augroup type_specific_overrides
 	autocmd FileType lisp setlocal tabstop=2 softtabstop=0 shiftwidth=2 noexpandtab cindent cinoptions=(2U1 equalprg=~/.local/libexec/stupid-lisp-indent.pl
 	autocmd FileType erb,javascript,ruby,haml,sass,scss,gitcommit,eelixer setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 	autocmd FileType haml,sass setlocal copyindent
+	autocmd FileType ruby vnoremap <F4> :s/\v(,\|])/.freeze\1/g <Return>
+	autocmd FileType perl setlocal tabstop=4 softtabstop=0 shiftwidth=4 noexpandtab
 
 	function! SetTagfileBecauseAutocmdSucksAtPatternExpansion()
 		let l:f = resolve(expand("%:p:h"))
@@ -54,6 +59,7 @@ augroup END
 augroup syntax_subregion_markers
 	au!
 	autocmd BufNewFile,BufRead * call SyntaxRange#Include('#\[begsyn perl\]', '#\[endsyn perl\]', 'perl', 'NonText')
+	autocmd BufNewFile,BufRead * call SyntaxRange#Include('#\[begsyn yaml\]', '#\[endsyn yaml\]', 'yaml', 'NonText')
 	autocmd BufNewFile,BufRead * call SyntaxRange#Include('--\[begsyn sql\]', '--\[endsyn sql\]', 'sql', 'NonText')
 	autocmd BufNewFile,BufRead * call SyntaxRange#Include('--\[begsyn plsql\]', '--\[endsyn plsql\]', 'plsql', 'NonText')
 augroup END
