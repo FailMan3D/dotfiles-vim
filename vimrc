@@ -62,6 +62,8 @@ augroup syntax_subregion_markers
 	autocmd BufNewFile,BufRead * call SyntaxRange#Include('#\[begsyn yaml\]', '#\[endsyn yaml\]', 'yaml', 'NonText')
 	autocmd BufNewFile,BufRead * call SyntaxRange#Include('--\[begsyn sql\]', '--\[endsyn sql\]', 'sql', 'NonText')
 	autocmd BufNewFile,BufRead * call SyntaxRange#Include('--\[begsyn plsql\]', '--\[endsyn plsql\]', 'plsql', 'NonText')
+	autocmd BufNewFile,BufRead * call SyntaxRange#Include('-#\[begsyn haml\]', '-#\[endsyn haml\]', 'haml', 'NonText')
+	autocmd BufNewFile,BufRead *.md call SyntaxRange#Include('```elixir', '```', 'elixir', 'NonText')
 augroup END
 
 augroup un_stupidize_comments
