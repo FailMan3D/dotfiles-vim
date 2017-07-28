@@ -13,12 +13,12 @@ inoremap <F3> <C-o>:syntax sync fromstart<Return>
 nnoremap <F3> :syntax sync fromstart<Return>
 inoremap <F5> <C-o>:tabprevious<Return>
 nnoremap <F5> :tabprevious<Return>
-inoremap <F8> <C-o>:tabnext<Return>
-nnoremap <F8> :tabnext<Return>
-inoremap <F6> <C-o>:bprevious<Return>
-nnoremap <F6> :bprevious<Return>
-inoremap <F7> <C-o>:bnext<Return>
-nnoremap <F7> :bnext<Return>
+inoremap <F6> <C-o>:tabnext<Return>
+nnoremap <F6> :tabnext<Return>
+inoremap <F7> <C-o>:bprevious<Return>
+nnoremap <F7> :bprevious<Return>
+inoremap <F8> <C-o>:bnext<Return>
+nnoremap <F8> :bnext<Return>
 
 inoremap <F10> <C-o>:stselect<Return>
 nnoremap <F10> <C-o>:stselect<Return>
