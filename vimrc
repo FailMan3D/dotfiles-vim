@@ -23,6 +23,8 @@ nnoremap <F8> :bnext<Return>
 inoremap <F10> <C-o>:stselect<Return>
 nnoremap <F10> <C-o>:stselect<Return>
 
+cnoreabbrev W w
+
 augroup type_specific_overrides
 	au!
 	autocmd FileType lisp setlocal tabstop=2 softtabstop=0 shiftwidth=2 noexpandtab cindent cinoptions=(2U1 equalprg=~/.local/libexec/stupid-lisp-indent.pl
