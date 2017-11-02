@@ -9,8 +9,8 @@ end
 setglobal printoptions=number:y,paper:letter
 set printoptions=number:y,paper:letter
 
-inoremap <F3> <C-o>:syntax sync fromstart<Return>
-nnoremap <F3> :syntax sync fromstart<Return>
+inoremap <F3> <C-o>:syntax on;syntax sync fromstart<Return>
+nnoremap <F3> :syntax on;syntax sync fromstart<Return>
 inoremap <F5> <C-o>:tabprevious<Return>
 nnoremap <F5> :tabprevious<Return>
 inoremap <F6> <C-o>:tabnext<Return>
