@@ -1,5 +1,8 @@
 setglobal nocompatible
 execute pathogen#infect()
+filetype plugin on
+filetype detect
+syntax on
 set number autoindent
 colo desert
 if has('gui_running')
