@@ -22,3 +22,6 @@
 [submodule "bundle/Vim-R-plugin"]
 	path = bundle/Vim-R-plugin
 	url = https://github.com/vim-scripts/Vim-R-plugin.git
+[submodule "bundle/vim-mikrotik"]
+	path = bundle/vim-mikrotik
+	url = https://github.com/grawity/vim-mikrotik.git
