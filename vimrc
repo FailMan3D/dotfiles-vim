@@ -1,4 +1,5 @@
 setglobal nocompatible
+set backspace=indent,eol,start
 execute pathogen#infect()
 filetype plugin on
 filetype detect
