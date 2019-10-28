@@ -25,3 +25,6 @@
 [submodule "bundle/vim-mikrotik"]
 	path = bundle/vim-mikrotik
 	url = https://github.com/grawity/vim-mikrotik.git
+[submodule "_linkfarm_src/legion_regent_syntax"]
+	path = _linkfarm_src/legion_regent_syntax
+	url = https://github.com/StanfordLegion/regent.vim.git

@@ -1,0 +1,1 @@
+../_linkfarm_src/legion_regent_syntax/regent.vim
