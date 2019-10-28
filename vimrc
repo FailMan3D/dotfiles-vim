@@ -11,7 +11,7 @@ if has('gui_running')
 end
 
 setglobal printoptions=number:y,paper:letter
-set printoptions=number:y,paper:letter
+set printoptions=number:y,paper:letter,left:5pc
 
 inoremap <F3> <C-o>:syntax on;syntax sync fromstart<Return>
 nnoremap <F3> :syntax on;syntax sync fromstart<Return>
@@ -70,6 +70,8 @@ augroup syntax_subregion_markers
 	autocmd BufNewFile,BufRead * call SyntaxRange#Include('--\[begsyn plsql\]', '--\[endsyn plsql\]', 'plsql', 'NonText')
 	"autocmd BufNewFile,BufRead * call SyntaxRange#Include('-#\[begsyn haml\]', '-#\[endsyn haml\]', 'haml', 'NonText')
 	autocmd BufNewFile,BufRead *.md call SyntaxRange#Include('```elixir', '```', 'elixir', 'NonText')
+	"autocmd BufNewFile,BufRead * call SyntaxRange#Include('#[begsyn elixir]', '#[endsyn elixir]', 'elixir', 'NonText')
+	"autocmd BufNewFile,BufRead * call SyntaxRange#Include('<%#begsyn eex%>', '<%#endsyn eex%>', 'eelixir', 'NonText')
 augroup END
 
 augroup un_stupidize_comments
